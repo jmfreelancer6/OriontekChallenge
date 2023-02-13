@@ -9,6 +9,7 @@ namespace API.Mapper
         public MapperProfile()
         {
             CreateMap<tbl_Clientes_Contacto, ClienteContactoDto>().ReverseMap();
+            CreateMap<tbl_Clientes, ClienteDto>().ReverseMap();
         }
     }
 }
