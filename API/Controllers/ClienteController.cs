@@ -1,6 +1,6 @@
 ﻿using API.Dtos;
 using AutoMapper;
-using Domain.Core.Constract;
+using Domain.Core.Contracts;
 using Domain.Core.Entity;
 using Microsoft.AspNetCore.Mvc;
 

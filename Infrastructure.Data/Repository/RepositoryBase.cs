@@ -1,4 +1,4 @@
-﻿using Domain.Core.Constract;
+﻿using Domain.Core.Contracts;
 using Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 

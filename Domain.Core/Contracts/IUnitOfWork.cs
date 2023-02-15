@@ -1,6 +1,6 @@
 ﻿using Domain.Core.Entity;
 
-namespace Domain.Core.Constract
+namespace Domain.Core.Contracts
 {
     public interface IUnitOfWork
     {

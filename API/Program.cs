@@ -1,5 +1,5 @@
 using API.Mapper;
-using Domain.Core.Constract;
+using Domain.Core.Contracts;
 using Infrastructure.Data.Context;
 using Infrastructure.Data.UnitOfWork;
 using Microsoft.EntityFrameworkCore;

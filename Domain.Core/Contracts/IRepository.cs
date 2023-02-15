@@ -1,4 +1,4 @@
-﻿namespace Domain.Core.Constract
+﻿namespace Domain.Core.Contracts
 {
     public interface IRepository<T> where T : class
     {

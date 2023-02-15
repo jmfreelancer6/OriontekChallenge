@@ -1,4 +1,4 @@
-﻿using Domain.Core.Constract;
+﻿using Domain.Core.Contracts;
 using Domain.Core.Entity;
 using Infrastructure.Data.Context;
 using Infrastructure.Data.Repository;
