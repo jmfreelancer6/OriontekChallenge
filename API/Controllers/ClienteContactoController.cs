@@ -33,7 +33,18 @@ namespace API.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
-
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            try
+            {
+                return Ok(_mapper.Map<ClienteContactoDto>(await _unitOfWork.ClienteContactoRepository.GetByIdAsync(id)));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] ClienteContactoDto value)
         {

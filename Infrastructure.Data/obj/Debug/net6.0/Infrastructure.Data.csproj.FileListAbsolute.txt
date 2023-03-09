@@ -13,3 +13,18 @@ C:\Users\Joskin Villaman\source\repos\OriontekChallenge\Infrastructure.Data\obj\
 C:\Users\Joskin Villaman\source\repos\OriontekChallenge\Infrastructure.Data\obj\Debug\net6.0\refint\Infrastructure.Data.dll
 C:\Users\Joskin Villaman\source\repos\OriontekChallenge\Infrastructure.Data\obj\Debug\net6.0\Infrastructure.Data.pdb
 C:\Users\Joskin Villaman\source\repos\OriontekChallenge\Infrastructure.Data\obj\Debug\net6.0\ref\Infrastructure.Data.dll
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Infrastructure.Data\bin\Debug\net6.0\Infrastructure.Data.deps.json
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Infrastructure.Data\bin\Debug\net6.0\Infrastructure.Data.dll
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Infrastructure.Data\bin\Debug\net6.0\Infrastructure.Data.pdb
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Infrastructure.Data\bin\Debug\net6.0\Domain.Core.dll
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Infrastructure.Data\bin\Debug\net6.0\Domain.Core.pdb
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Infrastructure.Data\obj\Debug\net6.0\Infrastructure.Data.csproj.AssemblyReference.cache
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Infrastructure.Data\obj\Debug\net6.0\Infrastructure.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Infrastructure.Data\obj\Debug\net6.0\Infrastructure.Data.AssemblyInfoInputs.cache
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Infrastructure.Data\obj\Debug\net6.0\Infrastructure.Data.AssemblyInfo.cs
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Infrastructure.Data\obj\Debug\net6.0\Infrastructure.Data.csproj.CoreCompileInputs.cache
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Infrastructure.Data\obj\Debug\net6.0\Infrastructure.Data.csproj.CopyComplete
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Infrastructure.Data\obj\Debug\net6.0\Infrastructure.Data.dll
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Infrastructure.Data\obj\Debug\net6.0\refint\Infrastructure.Data.dll
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Infrastructure.Data\obj\Debug\net6.0\Infrastructure.Data.pdb
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Infrastructure.Data\obj\Debug\net6.0\ref\Infrastructure.Data.dll

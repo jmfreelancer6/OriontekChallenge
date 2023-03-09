@@ -10,3 +10,15 @@ C:\Users\Joskin Villaman\source\repos\OriontekChallenge\Domain.Core\obj\Debug\ne
 C:\Users\Joskin Villaman\source\repos\OriontekChallenge\Domain.Core\obj\Debug\net6.0\refint\Domain.Core.dll
 C:\Users\Joskin Villaman\source\repos\OriontekChallenge\Domain.Core\obj\Debug\net6.0\Domain.Core.pdb
 C:\Users\Joskin Villaman\source\repos\OriontekChallenge\Domain.Core\obj\Debug\net6.0\ref\Domain.Core.dll
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Domain.Core\bin\Debug\net6.0\Domain.Core.deps.json
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Domain.Core\bin\Debug\net6.0\Domain.Core.dll
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Domain.Core\bin\Debug\net6.0\Domain.Core.pdb
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Domain.Core\obj\Debug\net6.0\Domain.Core.csproj.AssemblyReference.cache
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Domain.Core\obj\Debug\net6.0\Domain.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Domain.Core\obj\Debug\net6.0\Domain.Core.AssemblyInfoInputs.cache
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Domain.Core\obj\Debug\net6.0\Domain.Core.AssemblyInfo.cs
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Domain.Core\obj\Debug\net6.0\Domain.Core.csproj.CoreCompileInputs.cache
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Domain.Core\obj\Debug\net6.0\Domain.Core.dll
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Domain.Core\obj\Debug\net6.0\refint\Domain.Core.dll
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Domain.Core\obj\Debug\net6.0\Domain.Core.pdb
+C:\Users\jvillaman\Desktop\Oriontek\OriontekChallenge\Domain.Core\obj\Debug\net6.0\ref\Domain.Core.dll
