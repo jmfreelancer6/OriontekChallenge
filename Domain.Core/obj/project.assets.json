@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jvillaman\\.nuget\\packages\\": {}
+    "C:\\Users\\Joskin Villaman\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jvillaman\\Desktop\\Oriontek\\OriontekChallenge\\Domain.Core\\Domain.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Joskin Villaman\\source\\repos\\OriontekChallenge\\Domain.Core\\Domain.Core.csproj",
       "projectName": "Domain.Core",
-      "projectPath": "C:\\Users\\jvillaman\\Desktop\\Oriontek\\OriontekChallenge\\Domain.Core\\Domain.Core.csproj",
-      "packagesPath": "C:\\Users\\jvillaman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jvillaman\\Desktop\\Oriontek\\OriontekChallenge\\Domain.Core\\obj\\",
+      "projectPath": "C:\\Users\\Joskin Villaman\\source\\repos\\OriontekChallenge\\Domain.Core\\Domain.Core.csproj",
+      "packagesPath": "C:\\Users\\Joskin Villaman\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Joskin Villaman\\source\\repos\\OriontekChallenge\\Domain.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jvillaman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Joskin Villaman\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -51,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -60,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.308\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

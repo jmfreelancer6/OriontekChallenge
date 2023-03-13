@@ -1,5 +1,4 @@
 ﻿using API.Dtos;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OriontekMVC.Models;
 
@@ -10,15 +9,15 @@ namespace OriontekMVC.Controllers
         // GET: ClientesContactoController
         public async Task<ActionResult> Index()
         {
-            var data = RequestAPI.GetAPIAsync("https://localhost:44341/api/ClienteContacto");
-            return View(await data);
+            RequestAPI<ClienteContactoDto> requestAPI = new RequestAPI<ClienteContactoDto>(HttpMethod.Get, "https://localhost:44341/api/ClienteContacto", null);
+            return View(await requestAPI.RequestAPIListAsync());
         }
 
         // GET: ClientesContactoController/Details/5
         public async Task<ActionResult> Details(int id)
         {
-            var data = RequestAPI.GetOneAPIAsync("https://localhost:44341/api/ClienteContacto/"+ id);
-            return View(await data);
+            RequestAPI<ClienteContactoDto> requestAPI = new RequestAPI<ClienteContactoDto>(HttpMethod.Get, "https://localhost:44341/api/ClienteContacto/"+ id, null);
+            return View(await requestAPI.RequestAPISingleAsync());
         }
 
         // GET: ClientesContactoController/Create
@@ -30,11 +29,12 @@ namespace OriontekMVC.Controllers
         // POST: ClientesContactoController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(ClienteContactoDto collection)
+        public async Task<ActionResult> Create(ClienteContactoDto collection)
         {
             try
             {
-                _ = RequestAPI.PostAPIAsync("https://localhost:44341/api/ClienteContacto/", collection);
+                RequestAPI<ClienteContactoDto> requestAPI = new RequestAPI<ClienteContactoDto>(HttpMethod.Post, "https://localhost:44341/api/ClienteContacto/", collection);
+                await requestAPI.RequestAPIAsync();
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -46,18 +46,19 @@ namespace OriontekMVC.Controllers
         // GET: ClientesContactoController/Edit/5
         public async Task<ActionResult> Edit(int id)
         {
-            var data = RequestAPI.GetOneAPIAsync("https://localhost:44341/api/ClienteContacto/" + id);
-            return View(await data);
+            RequestAPI<ClienteContactoDto> requestAPI = new RequestAPI<ClienteContactoDto>(HttpMethod.Get, "https://localhost:44341/api/ClienteContacto/" + id, null);
+            return View(await requestAPI.RequestAPISingleAsync());
         }
 
         // POST: ClientesContactoController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, ClienteContactoDto collection)
+        public async Task<ActionResult> Edit(int id, ClienteContactoDto collection)
         {
             try
             {
-                _ = RequestAPI.PutAPIAsync("https://localhost:44341/api/ClienteContacto/" + id, collection);
+                RequestAPI<ClienteContactoDto> requestAPI = new RequestAPI<ClienteContactoDto>(HttpMethod.Put, "https://localhost:44341/api/ClienteContacto/" + id, collection);
+                await requestAPI.RequestAPIAsync();
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -69,18 +70,19 @@ namespace OriontekMVC.Controllers
         // GET: ClientesContactoController/Delete/5
         public async Task<ActionResult> Delete(int id)
         {
-            var data = RequestAPI.GetOneAPIAsync("https://localhost:44341/api/ClienteContacto/" + id);
-            return View(await data);
+            RequestAPI<ClienteContactoDto> requestAPI = new RequestAPI<ClienteContactoDto>(HttpMethod.Get, "https://localhost:44341/api/ClienteContacto/" + id, null);
+            return View(await requestAPI.RequestAPISingleAsync());
         }
 
         // POST: ClientesContactoController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, ClienteContactoDto collection)
+        public async Task<ActionResult> Delete(int id, ClienteContactoDto collection)
         {
             try
             {
-                RequestAPI.DeleteAPIAsync("https://localhost:44341/api/ClienteContacto/" + id);
+                RequestAPI<ClienteContactoDto> requestAPI = new RequestAPI<ClienteContactoDto>(HttpMethod.Delete, "https://localhost:44341/api/ClienteContacto/" + id, null);
+                await requestAPI.RequestAPIAsync();
                 return RedirectToAction(nameof(Index));
             }
             catch

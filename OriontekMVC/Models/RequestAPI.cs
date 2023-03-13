@@ -1,62 +1,47 @@
-﻿using API.Dtos;
-using Newtonsoft.Json;
-using System.Collections.Generic;
+﻿using Newtonsoft.Json;
 using System.Text;
 
 namespace OriontekMVC.Models
 {
-    public class RequestAPI
+    public class RequestAPI<T>
     {
-        public static async Task<IEnumerable<ClienteContactoDto>?> GetAPIAsync(string url)
+        private HttpRequestMessage httpRequest = new HttpRequestMessage();
+        public RequestAPI(HttpMethod method, string url, T? content) 
         {
-            using (var client = new HttpClient())
+            httpRequest.Method = method;
+            httpRequest.RequestUri = new Uri(url);
+            if (content != null)
             {
-                var uri = new Uri(url);
-                var response = await client.GetAsync(uri);
-                string textResult = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<IEnumerable<ClienteContactoDto>>(textResult);
-            }
-        }
-        public static async Task<ClienteContactoDto?> GetOneAPIAsync(string url)
-        {
-            using (var client = new HttpClient())
-            {
-                var uri = new Uri(url);
-                var response = await client.GetAsync(uri);
-                string textResult = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<ClienteContactoDto>(textResult);
-            }
-        }
-        public static async Task<string> PostAPIAsync(string url, ClienteContactoDto content)
-        {
-            using (var client = new HttpClient())
-            {
-                var uri = new Uri(url);
                 var myContent = JsonConvert.SerializeObject(content);
                 var stringContent = new StringContent(myContent, UnicodeEncoding.UTF8, "application/json");
-                var response = await client.PostAsync(uri, stringContent);
-                string textResult = await response.Content.ReadAsStringAsync();
-                return textResult;
+                httpRequest.Content = stringContent;
             }
         }
-        public static async Task<string> PutAPIAsync(string url, ClienteContactoDto content)
+        public async Task<IEnumerable<T>?> RequestAPIListAsync()
         {
             using (var client = new HttpClient())
             {
-                var uri = new Uri(url);
-                var myContent = JsonConvert.SerializeObject(content);
-                var stringContent = new StringContent(myContent, UnicodeEncoding.UTF8, "application/json"); 
-                var response = await client.PutAsync(uri, stringContent);
+                var response = await client.SendAsync(httpRequest);
                 string textResult = await response.Content.ReadAsStringAsync();
-                return textResult;
+                return JsonConvert.DeserializeObject<IEnumerable<T>>(textResult);
             }
         }
-        public static async Task<string> DeleteAPIAsync(string url)
+
+        public async Task<T?> RequestAPISingleAsync()
         {
             using (var client = new HttpClient())
             {
-                var uri = new Uri(url);
-                var response = await client.DeleteAsync(uri);
+                var response = await client.SendAsync(httpRequest);
+                string textResult = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<T>(textResult);
+            }
+        }
+
+        public async Task<string> RequestAPIAsync()
+        {
+            using (var client = new HttpClient())
+            {
+                var response = await client.SendAsync(httpRequest);
                 string textResult = await response.Content.ReadAsStringAsync();
                 return textResult;
             }
