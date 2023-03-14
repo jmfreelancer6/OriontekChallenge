@@ -1,6 +1,8 @@
 ﻿using API.Dtos;
 using Microsoft.AspNetCore.Mvc;
 using OriontekMVC.Models;
+using System.Linq;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace OriontekMVC.Controllers
 {
@@ -21,7 +23,7 @@ namespace OriontekMVC.Controllers
         }
 
         // GET: ClientesContactoController/Create
-        public ActionResult Create()
+        public async Task<ActionResult> Create()
         {
             return View();
         }
